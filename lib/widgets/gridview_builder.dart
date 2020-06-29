@@ -18,7 +18,6 @@ class GridViewBuildWidget extends StatelessWidget {
       itemBuilder: (BuildContext context, int index) {
         print('_buildGridViewBuilder $index');
         return Card(
-          color:Colors.lightGreen.shade50,
           margin: EdgeInsets.all(8.0),
           child: InkWell(
             child: Column(
@@ -27,7 +26,7 @@ class GridViewBuildWidget extends StatelessWidget {
                 Icon(
                   _iconList[index],
                   size: 60.0,
-                  color: Colors.green,
+                  color: Colors.lightBlue.shade300,
                 ),
                 Divider(),
                 Text(
