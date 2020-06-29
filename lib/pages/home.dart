@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:bet_app/widgets/left_drawer.dart';
+import 'package:bet_app/widgets/gridview_builder.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -23,7 +24,9 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-      body: Container(),
+      body: SafeArea(
+        child: const GridViewBuildWidget()
+      ),
       drawer: LeftDrawerWidget(),
     );
   }
