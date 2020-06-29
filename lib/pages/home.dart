@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:bet_app/widgets/left_drawer.dart';
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -10,10 +12,6 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-           onPressed: () {},
-        ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
@@ -26,6 +24,7 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: Container(),
+      drawer: LeftDrawerWidget(),
     );
   }
 }
