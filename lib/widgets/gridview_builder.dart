@@ -37,7 +37,7 @@ class GridViewBuildWidget extends StatelessWidget {
               ],
             ),
             onTap: () {
-              print('Row $index');
+              Navigator.pushNamed(context, '/league');
             },
           ),
         );

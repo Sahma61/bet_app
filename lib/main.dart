@@ -1,5 +1,7 @@
+import 'package:bet_app/widgets/listView_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:bet_app/pages/home.dart';
+import 'package:bet_app/widgets/listView_builder.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,6 +31,9 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Home(),
+      routes: {
+        '/league' : (BuildContext context) => ListViewWidget(),
+      },
     );
   }
 }
