@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bet_app/widgets/left_drawer.dart';
 import 'package:bet_app/widgets/gridview_builder.dart';
+import 'package:bet_app/widgets/profile.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -8,6 +9,21 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  int _currentIndex = 0;
+  List _listPages = List();
+  Widget _currentPage;
+
+   @override
+  void initState() {
+    super.initState();
+    _listPages
+      ..add(const GridViewBuildWidget())
+      ..add(null)
+      ..add(Profile());
+    _currentPage = const GridViewBuildWidget();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,9 +41,39 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: SafeArea(
-        child: const GridViewBuildWidget()
+        child: _currentPage
       ),
       drawer: LeftDrawerWidget(),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title: Text("Home"),
+            backgroundColor: Colors.lightBlue,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+            title: Text("Notifications"),
+            backgroundColor: Colors.lightBlue,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.supervised_user_circle),
+            title: Text("Profile"),
+            backgroundColor: Colors.lightBlue,
+          ),
+        ],
+        onTap: (selectedIndex) => _pageSelect(selectedIndex),
+      ),
     );
+  }
+
+ 
+        
+  _pageSelect(int selectedIndex) {
+    setState(() {
+      _currentIndex = selectedIndex;
+      _currentPage = _listPages[selectedIndex];
+    });
   }
 }
