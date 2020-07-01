@@ -3,6 +3,7 @@ import 'package:bet_app/widgets/left_drawer.dart';
 import 'package:bet_app/widgets/gridview_builder.dart';
 import 'package:bet_app/widgets/profile.dart';
 import 'package:bet_app/widgets/profileOptionBuilder.dart';
+import 'package:bet_app/pages/login.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -21,7 +22,7 @@ class _HomeState extends State<Home> {
     _listPages
       ..add(const GridViewBuildWidget())
       ..add(null)
-      ..add(Profile());
+      ..add(Login());
     _currentPage = const GridViewBuildWidget();
   }
 

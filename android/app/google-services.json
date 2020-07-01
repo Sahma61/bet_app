@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "163015654901",
+    "firebase_url": "https://bet-app-42887.firebaseio.com",
+    "project_id": "bet-app-42887",
+    "storage_bucket": "bet-app-42887.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163015654901:android:6a3c6516dbe493df1674bc",
+        "android_client_info": {
+          "package_name": "com.example.bet_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163015654901-2jskpkh0gtsdbghus0olalanjoeilvdq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bet_app",
+            "certificate_hash": "7c6b270ddebf80b637df951b2526fdde5c1c6dd5"
+          }
+        },
+        {
+          "client_id": "163015654901-c6j4abtnpk53vtd8tfvmi9ohrop7rb6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwIr8KCFPZzVGi6_iehnF_ySL53ZvnTgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163015654901-c6j4abtnpk53vtd8tfvmi9ohrop7rb6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
