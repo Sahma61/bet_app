@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:bet_app/widgets/left_drawer.dart';
 import 'package:bet_app/widgets/gridview_builder.dart';
 import 'package:bet_app/widgets/profile.dart';
+import 'package:bet_app/widgets/profileOptionBuilder.dart';
 
 class Home extends StatefulWidget {
   @override
